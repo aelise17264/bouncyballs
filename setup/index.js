@@ -1,6 +1,6 @@
 console.log("let the bouncing begin")
 
-let canvas = document.getElementsById('canvas');
+let canvas = document.getElementById('canvas');
 let char = canvas.getContext('2d');
 let thisWidth = window.innerWidth;
 let thisHeight = window.innerHeight;
@@ -11,7 +11,7 @@ canvas.height = thisHeight;
 let mouseX = 0;
 let mouseY = 0;
 
-addEventListener('mousemove', () => {
+addEventListener('mousemove', function() {
     mouseX = event.clientX;
     mouseY = event.clientY;
 });
