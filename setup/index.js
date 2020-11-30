@@ -11,7 +11,7 @@ canvas.height = thisHeight;
 let mouseX = 0;
 let mouseY = 0;
 
-addEventListener('mousemove', function() {
+addEventListener('mousemove', () => {
     mouseX = event.clientX;
     mouseY = event.clientY;
 });
